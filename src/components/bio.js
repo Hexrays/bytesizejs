@@ -21,7 +21,8 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              maxWidth: rhythm(16),
+              marginBottom: rhythm(1),
             }}
           >
             <Image
@@ -38,12 +39,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Code blog by me, <strong>{author}</strong>. Live in Brooklyn, code
+              on a laptop.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              <a href={`https://hexrays.at/`}>Check out what I'm working on.</a>
             </p>
           </div>
         )
