@@ -21,7 +21,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              maxWidth: rhythm(16),
+              maxWidth: rhythm(18),
               marginBottom: rhythm(1),
             }}
           >
@@ -39,7 +39,7 @@ function Bio() {
               }}
             />
             <p>
-              Code blog by me, <strong>{author}</strong>. Live in Brooklyn, code
+              Code blog by me, <strong>{author}</strong>. Live in Brooklyn, work
               on a laptop.
               {` `}
               <a href={`https://hexrays.at/`}>Check out what I'm working on.</a>
