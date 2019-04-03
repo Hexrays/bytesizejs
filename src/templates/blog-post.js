@@ -1,10 +1,22 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { jsx, css } from "@emotion/core"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import styled from "@emotion/styled"
+
+const postContainer = css`
+  .gatsby-highlight {
+    font-size: 0.85rem;
+  }
+  pre[class*="language-"] {
+    border-radius: 4px;
+  }
+`
+const H1 = styled.h1({ marginTop: 0 })
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,7 +30,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <H1>{post.frontmatter.title}</H1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -29,7 +41,10 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          css={postContainer}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
