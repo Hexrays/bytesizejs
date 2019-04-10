@@ -71,4 +71,4 @@ const rootElement = document.getElementById("root")
 ReactDOM.render(<App />, rootElement)
 ```
 
-See it in action [here](https://codesandbox.io/s/n5167r6kvm?fontsize=14). Should I try again but change the `Incrementor` to use render props? Or should I just start on my todo app?
+See it in action [here](https://codesandbox.io/s/n5167r6kvm?fontsize=14). Should I try again but use render props? Or should I just start on my todo app?
